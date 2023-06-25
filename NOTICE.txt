@@ -19,7 +19,7 @@ In short, you may do what you wish with this project. Just give credit in
 the files or in the repository. Include this file with any new repository.
 Add to this file if you want, just don't remove anything from it.
 
-The images in this library fall under the CC BY-NC-SA 4.0 license
+The images in this repository fall under the CC BY-NC-SA 4.0 license
 (https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 In short, you may do what you wish with them, as long as you give credit,
