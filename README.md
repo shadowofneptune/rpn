@@ -1,7 +1,9 @@
 # RPN
+![rpn](https://github.com/shadowofneptune/rpn/assets/56777828/9d0edbb6-fa2e-496a-a641-0a53aa373d96)
+
 ### Version 1.0
 
-Rpn is a reverse-polish notation calculator. It comes
+RPN is a reverse-polish notation calculator. It comes
 with a **built-in manual**.
 
 ## Build instructions
