@@ -6,6 +6,12 @@
 RPN is a reverse-polish notation calculator. It comes
 with a **built-in manual**.
 
+
+
+https://github.com/shadowofneptune/rpn/assets/56777828/bb261144-c47b-4bd5-8d98-655298abf7f1
+
+
+
 ## Build instructions
 
 Open the project in Lazarus. Go to Project > Project Options..., then under
