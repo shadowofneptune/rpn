@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="RPN Calculator"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="4">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="rpn"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Checks>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+            <SmallerCode Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Sm -dRPN_TZ:="/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Windows-Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="rpn"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Checks>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <TargetProcessor Value="80386"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+            <SmallerCode Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Sm -dRPN_TZ:="/>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Clean">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="rpn" ApplyConventions="False"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <Optimizations>
+              <OptimizationLevel Value="0"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <WriteFPCLogo Value="False"/>
+            <ConfigFile>
+              <DontUseConfigFile Value="True"/>
+            </ConfigFile>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Compile="False" Build="False" Run="False"/>
+        </CompilerOptions>
+      </Item4>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="richmemopackage"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="rpn.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="manual.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ManualWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="rpn"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <Style Value="1"/>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+      <TargetOS Value="linux"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+        <UseHeaptrc Value="True"/>
+        <TrashVariables Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-Sm -dRPN_DEBUG_BUILD -dRPN_TZ:="/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="4">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="Unknown"/>
+      </Item4>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

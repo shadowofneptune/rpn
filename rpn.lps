@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="Release,Windows-Release"/>
+    <BuildModes Active="Windows-Release"/>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="rpn.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="20" Y="3"/>
+        <UsageCount Value="61"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="5"/>
+        <UsageCount Value="93"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="manual.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ManualWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="29"/>
+        <UsageCount Value="35"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="42" Y="58"/>
+        <UsageCount Value="25"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="project1.lpr"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="49"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="/usr/lib/lazarus/2.0.10/lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="395"/>
+        <CursorPos X="23" Y="404"/>
+        <UsageCount Value="16"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="46"/>
+        <UsageCount Value="8"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5678"/>
+        <CursorPos Y="5693"/>
+        <UsageCount Value="12"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="619"/>
+        <CursorPos Y="3612"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/interfaces/gtk3/gtk3bindings/lazpango1.pas"/>
+        <UnitName Value="LazPango1"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="22"/>
+        <UsageCount Value="7"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/share/lazarus/2.2.4/ide/lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="138"/>
+        <CursorPos X="23" Y="153"/>
+        <UsageCount Value="19"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/lazarus/2.2.4/components/lclextensions/include/gtk2/uses.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="2"/>
+        <UsageCount Value="19"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fv/src/menus.pas"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="59"/>
+        <CursorPos X="11" Y="74"/>
+        <UsageCount Value="17"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="images.lrs"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/interfaces/win32/win32int.pp"/>
+        <UnitName Value="Win32Int"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="18" Y="38"/>
+        <UsageCount Value="8"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/interfaces/win32/win32callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2105"/>
+        <CursorPos X="76" Y="2120"/>
+        <UsageCount Value="8"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="/usr/share/lazarus/2.2.4/lcl/include/menuitem.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos Y="85"/>
+        <UsageCount Value="11"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/richmemo/gtk2/gtk2richmemo.pas"/>
+        <UnitName Value="Gtk2RichMemo"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="22"/>
+        <UsageCount Value="9"/>
+      </Unit17>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

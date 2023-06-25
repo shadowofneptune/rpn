@@ -1,0 +1,154 @@
+object MainWindow: TMainWindow
+  Left = 739
+  Height = 334
+  Top = 347
+  Width = 240
+  Caption = 'RPN'
+  ClientHeight = 307
+  ClientWidth = 240
+  Constraints.MinHeight = 150
+  Constraints.MinWidth = 200
+  Menu = MainMenu
+  LCLVersion = '2.2.4.0'
+  object Prompt: TEdit
+    AnchorSideRight.Control = ExecuteButton
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 35
+    Top = 8
+    Width = 179
+    HelpType = htKeyword
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    OnKeyDown = PromptExecute
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    TextHint = 'Enter calculations here'
+  end
+  object StackList: TListBox
+    AnchorSideTop.Control = Prompt
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = StatusBar
+    Left = 8
+    Height = 232
+    Top = 51
+    Width = 223
+    HelpType = htKeyword
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    DoubleBuffered = False
+    ItemHeight = 0
+    ParentDoubleBuffered = False
+    ParentShowHint = False
+    ScrollWidth = -1
+    TabOrder = 1
+    TopIndex = -1
+  end
+  object ExecuteButton: TButton
+    AnchorSideTop.Control = Prompt
+    AnchorSideBottom.Control = Prompt
+    AnchorSideBottom.Side = asrBottom
+    Left = 191
+    Height = 35
+    Top = 8
+    Width = 40
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 4
+    Caption = '='
+    OnClick = ExecuteButtonClick
+    TabOrder = 2
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 20
+    Top = 287
+    Width = 240
+    Panels = <    
+      item
+        Style = psOwnerDraw
+        Width = 20
+      end    
+      item
+        Width = 50
+      end>
+    ParentFont = False
+    SimplePanel = False
+    OnDrawPanel = StatusBarDrawPanel
+  end
+  object ErrorImages: TImageList
+    Left = 16
+    Top = 120
+    Bitmap = {
+      4C7A030000001000000010000000BC0000000000000078DAED92C10AC3201044
+      03B9E52678CA2D37BFA6A5E00FEEBF0805C9EF547AB3AB9983174D60134A8B03
+      EFB2CCB8833A0C5D5D5D5D7FA4DB7D1CDC533306E83C3BA2D75B319621C603C2
+      4CEDEEDD7C8E094C040133DBEC917A6EBBCA6C7906654F3D6FD03756F0D9735D
+      5ED65F7A7FD2F73BE3FF747D5DD3F418E779D58C013ACD8E6497252AC632C478
+      4098A9BDBDF03926301104CC6CAB47EA895D65B63C8392A79137E81B2BF8E4B9
+      302FEA2FBD3FE9FB9DF17F7E4D1F2A056208
+    }
+  end
+  object MainMenu: TMainMenu
+    Left = 16
+    Top = 56
+    object MenuFile: TMenuItem
+      Caption = 'File'
+      object FileOpen: TMenuItem
+        Caption = 'Open Transcript'
+        ShortCut = 16463
+        OnClick = FileOpenClick
+      end
+      object FileRecord: TMenuItem
+        AutoCheck = True
+        Caption = 'Record Transcript'
+        ShortCut = 16466
+        OnClick = FileRecordClick
+      end
+      object FileDiscard: TMenuItem
+        Caption = 'Discard Transcript'
+        ShortCut = 16452
+        OnClick = FileDiscardClick
+      end
+      object FileSave: TMenuItem
+        Caption = 'Save Transcript'
+        ShortCut = 16467
+        OnClick = FileSaveClick
+      end
+      object FileQuit: TMenuItem
+        Caption = 'Quit'
+        ShortCut = 27
+        OnClick = FileQuitClick
+      end
+    end
+    object MenuHelp: TMenuItem
+      Caption = 'Help'
+      object HelpDict: TMenuItem
+        Caption = 'Consult Manual'
+        ShortCut = 16456
+        OnClick = HelpDictClick
+      end
+      object HelpAbout: TMenuItem
+        Caption = 'About RPN'
+        OnClick = HelpAboutClick
+      end
+    end
+  end
+  object OpenTranscriptDialog: TOpenDialog
+    Title = 'Open Transcript'
+    Left = 16
+    Top = 184
+  end
+  object SaveTranscriptDialog: TSaveDialog
+    Title = 'Save transcript'
+    Left = 70
+    Top = 108
+  end
+end

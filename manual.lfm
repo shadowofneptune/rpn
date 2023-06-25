@@ -1,0 +1,182 @@
+object ManualWindow: TManualWindow
+  Left = 520
+  Height = 498
+  Top = 362
+  Width = 664
+  Caption = 'Manual'
+  ClientHeight = 498
+  ClientWidth = 664
+  Constraints.MinHeight = 150
+  Constraints.MinWidth = 200
+  LCLVersion = '2.2.4.0'
+  object TabBar: TPageControl
+    Left = 8
+    Height = 482
+    Top = 8
+    Width = 648
+    ActivePage = Advanced
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    TabIndex = 1
+    TabOrder = 0
+    object BasicUsage: TTabSheet
+      Caption = 'Basic Usage'
+      ClientHeight = 449
+      ClientWidth = 638
+      object BUMemo: TRichMemo
+        Left = 0
+        Height = 449
+        Top = 0
+        Width = 638
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        HideSelection = False
+        Lines.Strings = (
+          'RPN User''s Manual'
+          'Chapter 1: Basic Usage'
+          ''
+          '1.1 What Is RPN?'
+          ''
+          'RPN is a Reverse-Polish notation calculator. This means that operators like +, -, and / come after the numbers they work on. As an example, here is an equation in normal notation:'
+          ''
+          '     (4 * 3) * (2 ^ 3)'
+          ''
+          'It can be rewritten in RPN format as:'
+          ''
+          '     4 3 * 2 3 ^ *'
+          ''
+          'There''s no need for parentheses or an order of operations, everything flows from left to right.'
+          ''
+          '1.2 The Interface'
+          ''
+          'Calculations like the one above can be entered into the prompt near the top of the window, below the menu bar. Make sure each number and operator is separated by a space. To finish entering the calculation, hit the Return key, or the ''='' button next to the prompt.'
+          ''
+          'The result of the calculation is displayed in the stack, a large box filling up the rest of the window. These can be used in calculations, as if they were part of the prompt''s text.'
+          ''
+          'The status bar is at the very bottom of the window. It displays messages. If there is nothing wrong with what you entered into the prompt, it will show nothing. If there''s a minor issue, such as a misspelled operator, it will show a yellow light in the left-hand corner. If there''s a major issue where it cannot continue parsing the prompt, such as a bad macro definition, there will be a red light in the left-hand corner. Each comes with an error message to help diagnose what went wrong.'
+          ''
+          '1.3 Macros'
+          ''
+          'Macros allow you to reuse a series of calcuations easily. For example, say you were repeatingly calculating the circumference of circles. Instead of typing out the formula repeatedly, it can be stored as a macro:'
+          ''
+          '     [ circ 2 pi * * ]'
+          ''
+          'Macro definitions start with ''['' and end with '']''. The word following a ''['' is the name of the macro. Anything following that will be executed when the macro is called, as if it was typed out by hand.'
+          ''
+          'Macros can call other macros. Here, ''circ'' has been used to convert degrees to radians:'
+          ''
+          '     [ deg2rad 360 / circ ]'
+          ''
+          'Default operators and numbers can be overwritten. Though it''d be an odd choice, this is a valid macro:'
+          ''
+          '     [ 0 1 ]'
+        )
+        ReadOnly = True
+        Rtf = '{\rtf1\ansi\ansicp1252\deff0\deflan1033{\fonttbl{\f0\fcharset0 Cantarell;}}\f0\fs22\b \pard\qc\li0\sl200\slmult1 RPN User''s Manual\f0\fs22\b0 \par \f0\fs22\b \pard\qc\li0\sl200\slmult1 Chapter \f0\fs22\b 1: \f0\fs22\b Basic Usage\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22\b \pard\li0\sl200\slmult1 1.\f0\fs22\b 1\f0\fs22\b  \f0\fs22\b What Is RPN?\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 RPN is a Reverse-Polish notation calculator.\f0\fs22  This means that operators like +, -, and / come \f0\fs22 after\f0\fs22  the numbers they work on. As an example, here is an equation in normal notation:\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1      (4 * 3) * (2 ^ 3)\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 It can be rewritten in RPN format as:\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1      4 3 * 2 3 ^ *\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 There''s no need for parentheses or an order of operations, everything flows from left to right.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22\b \pard\li0\sl200\slmult1 1.2\f0\fs22\b  The Interface\f0\fs24\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 Calculations like the one above can be entered into the \f0\fs22\i p\f0\fs22\i rompt\f0\fs22\i0  near the top of the window, below the menu bar. Make sure each number and operator is separated by a space. To finish entering the calculation, hit the Return key, or the ''='' button next to the prompt.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 The result of the calculation is displayed in the \f0\fs22\i s\f0\fs22\i tack\f0\fs22\i0 , a large box filling up the rest of the window.\f0\fs22  These can be used in calculations, as if they were part of the prompt''s text.\f0\fs22 \par \pard\li0\sl200\slmult1 \par \pard\li0\sl200\slmult1 The \f0\fs22\i status bar\f0\fs22\i0  is at the very bottom of the window. It displays messages. If there is nothing wrong with what you entered into the prompt, it will show nothing. If there''s a minor issue, such as a misspelled operator, it will show a yellow light in the left-hand corner. If there''s a major issue where it cannot continue parsing the prompt, such as a bad macro definition, there will be a red light in the left-hand corner. Each comes with an error message to help diagnose what went wrong.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22\b \pard\li0\sl200\slmult1 1.3\f0\fs24\b0  \f0\fs24\b Macros\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 Macros allow you to reuse a series of calcuations easily. For example, say you were repeatingly calculating the circumference of circles. Instead of typing out the formula repeatedly, it can be stored as a macro:\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1      [ circ 2 pi * * ]\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 Macro definitions start with ''['' and end with '']''. The word following a ''['' is the name of the macro. Anything following that will be executed when the macro is called, as if it was typed out by hand.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 Macros can call other macros. Here, ''circ'' has been used to convert degrees to radians:\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1      [ deg2rad 360 / circ ]\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 Default operators and numbers can be overwritten. Though it''d be an odd choice, this is a valid macro:\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs24 \pard\li0\sl200\slmult1      [ 0 1 ]\f0\fs24 \par }'
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+        ZoomFactor = 1
+      end
+    end
+    object Advanced: TTabSheet
+      Caption = 'Advanced Usage'
+      ClientHeight = 449
+      ClientWidth = 638
+      object AdvancedMemo: TRichMemo
+        Left = 0
+        Height = 449
+        Top = 0
+        Width = 638
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        HideSelection = False
+        Lines.Strings = (
+          'RPN User''s Manual'
+          'Chapter 2: Advanced Usage'
+          ''
+          '2.1 Transcripts'
+          ''
+          'A transcript is a running log of your usage of the calculator. Start recording a transcript using File>Record Transcript, or with Ctrl+R. Now, anything you enter into the calculator will be saved in the background. You can stop recording by hitting Record Transcript again.'
+          ''
+          'A transcript can be saved as a text file using File>Save Transcript (Ctrl+S). You can also discard the current transcript and start fresh using File>Discard Transcript (Ctrl+D).'
+          ''
+          'A transcript can be loaded into the calculator using File>Open Transcript (Ctrl+O). This is somewhat different than the other options because the calculator will execute anything written in the transcript, as if you typed it out yourself. This can be used to keep a library of useful macros.'
+          ''
+          '2.2 Comments'
+          ''
+          'Comments can be used to help organize more detailed transcripts. Begin a comment with ''{'' and end it with ''}''. Like with any other operator, macro, or number, it must be separated from other text with a space. Anything within the comment is passed over without reading it.'
+        )
+        ReadOnly = True
+        Rtf = '{\rtf1\ansi\ansicp1252\deff0\deflan1033{\fonttbl{\f0\fcharset0 Cantarell;}}\f0\fs22\b \pard\qc\li0\sl200\slmult1 RPN User''s Manual\f0\fs22\b0 \par \f0\fs22\b \pard\qc\li0\sl200\slmult1 Chapter \f0\fs22\b 2\f0\fs22\b : Advanced\f0\fs22\b  Usage\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22\b \pard\li0\sl200\slmult1 2.1\f0\fs22\b0  \f0\fs22\b Transcripts\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 A \f0\fs22\i t\f0\fs22\i ranscript\f0\fs22\i0  is a running log of your usage of the calculator. Start recording a transcript using File>Record Transcript, or with Ctrl+R. Now, anything you enter into the calculator will be saved in the background. You can stop recording by hitting Record Transcript again.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 A transcript can be saved as a text file using File>Save Transcript (Ctrl+S). You can also discard the current transcript and start fresh using File>Discard Transcript (Ctrl+D).\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22 \pard\li0\sl200\slmult1 A transcript can be loaded into the calculator using File>Open Transcript (Ctrl+O). This is somewhat different than the other options because the calculator will execute anything written in the transcript, as if you typed it out yourself. This can be used to keep a library of useful macros.\f0\fs22 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs22\b \pard\li0\sl200\slmult1 2.2 Comments\f0\fs22\b0 \par \f0\fs22 \pard\li0\sl200\slmult1 \par \f0\fs24 \pard\li0\sl200\slmult1 Comments can be used to help organize more detailed transcripts. Begin a comment with ''\{'' and end it with ''\}''. Like with any other operator, macro, or number, it must be separated from other text with a space. Anything within the comment is passed over without reading it.\f0\fs24 \par }'
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+        ZoomFactor = 1
+      end
+    end
+    object OperatorList: TTabSheet
+      Caption = 'Operators'
+      ClientHeight = 449
+      ClientWidth = 638
+      object OperatorListContent: TListView
+        Left = 0
+        Height = 449
+        Top = 0
+        Width = 638
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSortIndicator = True
+        AutoWidthLastColumn = True
+        Columns = <        
+          item
+            Alignment = taRightJustify
+            Caption = 'Operator'
+            Width = 100
+            SortIndicator = siAscending
+          end        
+          item
+            Caption = 'Description'
+            Width = 586
+            SortIndicator = siAscending
+          end>
+        Items.LazData = {
+          CB03000010000000FFFFFFFFFFFFFFFFFFFFFFFF010000000100000025410000
+          0052656D61696E646572206F66206469766973696F6E2E20526573756C742063
+          616E2062652065697468657220706F736974697665206F72206E656761746976
+          652EFFFFFFFFFFFFFFFFFFFFFFFF01000000010000002A0E0000004D756C7469
+          706C69636174696F6EFFFFFFFFFFFFFFFFFFFFFFFF01000000010000002B0800
+          00004164646974696F6EFFFFFFFFFFFFFFFFFFFFFFFF01000000010000002D0B
+          0000005375627472616374696F6EFFFFFFFFFFFFFFFFFFFFFFFF010000000100
+          00002F080000004469766973696F6EFFFFFFFFFFFFFFFFFFFFFFFF0100000001
+          0000005E210000004578706F6E656E74696174696F6E2C2027746F2074686520
+          706F776572206F6627FFFFFFFFFFFFFFFFFFFFFFFF0100000004000000326475
+          702C0000004475706C6963617465732074686520746F702074776F206E756D62
+          657273206F6E2074686520737461636B2EFFFFFFFFFFFFFFFFFFFFFFFF010000
+          000400000064726F702C000000446973636172647320746865206E756D626572
+          206F6E2074686520746F70206F662074686520737461636B2EFFFFFFFFFFFFFF
+          FFFFFFFFFF01000000030000006475702A0000004475706C6963617465732074
+          6865206E756D626572206F6E20746F70206F662074686520737461636B2EFFFF
+          FFFFFFFFFFFFFFFFFFFF01000000020000006C6E040000006C6E2829FFFFFFFF
+          FFFFFFFFFFFFFFFF01000000030000006C6F67050000006C6F672829FFFFFFFF
+          FFFFFFFFFFFFFFFF01000000030000006D6F643E0000004D6F64756C6F2E204C
+          696B65207468652072656D61696E6465722C206275742074686520726573756C
+          7420697320616C7761797320706F7369746976652EFFFFFFFFFFFFFFFFFFFFFF
+          FF010000000200000070690B000000CF802C207E332E31343135FFFFFFFFFFFF
+          FFFFFFFFFFFF0100000003000000726F744C000000526F746174657320746865
+          20746F70207468726565206E756D62657273206F6E2074686520737461636B20
+          736F207468617420746865206C6F77657374206F6E65206973206F6E20746F70
+          2EFFFFFFFFFFFFFFFFFFFFFFFF0100000004000000737172740B000000537175
+          61726520726F6F74FFFFFFFFFFFFFFFFFFFFFFFF010000000400000073776170
+          2700000053776170732074686520746F702074776F206E756D62657273206F6E
+          2074686520737461636B2EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFF
+        }
+        ScrollBars = ssAutoVertical
+        SortColumn = 0
+        SortType = stText
+        TabOrder = 0
+        ViewStyle = vsReport
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+[ circ 2 pi * * ] { Calculates circumference }
+[ deg2rad 360 / circ ] { Converts degrees to radians }
+[ rad2deg 2 pi * / 360 * ] { Converts radians to degrees }
+[ pythag dup * swap dup * + sqrt ] { The Pythagorean theorum }
+
+{ Leap year calculation for the Symmetry454 calculator }
+[ symmetry454 52 * 146 + 293 mod ]
+[ tau 6.28318530717959 ] { unit circle }
+[ oz 30 * ] { oz to mL }
